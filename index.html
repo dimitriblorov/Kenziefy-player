@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KenzieFy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <main>
+        <!-- Sidebar -->
+        <aside class="sidebarMenuNavegacao">
+            <img src="./src/images/logo.png" alt="Logo KenzieFy">
+
+            <!-- Menu -->
+            <nav class="menuNavegacao">
+                <ul class="listaLinks">
+                    <li>
+                        <a href="https://kenzie.com.br/">
+                            <img src="./src/images/icone1.png" alt="Home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://kenzie.com.br/">
+                            <img src="./src/images/icone2.png" alt="Browse">
+                            Browse
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://kenzie.com.br/">
+                            <img src="./src/images/icone3.png" alt="Liked songs">
+                            Liked songs
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Music List -->
+        <section class="secaoMusicas">
+            <header class="cabecalho">
+                <div class="user">
+                    <img src="./src/images/user.png" alt="User">
+                    <h2>Dimitri</h2>
+                </div>
+
+                <div class="qtdMusicas">
+                    <p>1158 songs</p>
+                </div>
+            </header>
+
+            <div class="areaListaMusicas">
+                <button id="btnPause">Pause</button>
+
+                <div class="cabecalhoInfoMusicas">
+                    <p class="primeiroItem">TITLE</p>
+                    <p>ARTIST</p>
+                    <p>ALBUM</p>
+                </div>
+
+                <ul class="listaDeMusicas">
+                    
+                </ul>
+            </div>
+        </section>
+
+        <!-- Player -->
+        <section class="areaPlayer">
+
+            <audio src="" id="saidaAudio"></audio>
+            
+            <div class="infoMusicaAtual">
+                <figure class="imagemAlbum">
+                    <img id="fotoAlbum" src="./src/images/album4.png" alt="Album">
+                    <figcaption>Legenda</figcaption>
+                </figure>
+                
+                
+                <div class="infoAlbum">
+                    <h2 id="nomeMusica">Square One</h2>
+                    <p id="nomeAlbum">Coldplay</p>
+                </div>
+            </div>
+
+            <div class="areaPlayerControles">
+                <button id="btnControlPrev"></button>
+                <button id="btnControlPlay"></button>
+                <button id="btnControlNext"></button>
+            </div>
+
+            <div class="areaPlayerVolume">
+                <input type="range" value="1" step="1.0">
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./src/js/script.js"></script>
+
+</body>
+</html>
